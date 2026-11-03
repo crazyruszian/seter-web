@@ -63,3 +63,40 @@ button{font:inherit;color:inherit;cursor:pointer}
 .dots i.on{background:#fff}
 .cam{display:flex;flex-direction:column;gap:12px;align-items:center}
 .cam video{max-width:92vw;max-height:70vh;border-radius:12px;transform:scaleX(-1)}
+
+/* ---- Desktop-App-Look ---- */
+body{font-size:14px;letter-spacing:.005em}
+.app{background:var(--bg)}
+.side{width:380px;min-width:300px;background:var(--card);border-right:1px solid var(--line)}
+.side header,.main header{height:64px;padding:0 20px;background:var(--card)}
+.main{background:var(--bg)}
+.main header{border-bottom:1px solid var(--line)}
+.row{padding:12px 20px;border:0;border-bottom:1px solid transparent;display:flex;align-items:center;gap:12px;transition:background .12s}
+.row:hover{background:var(--bg)}
+.row.on{background:var(--them)}
+.row .n{font-size:15px}
+.row .s{margin-top:2px;font-size:13px}
+.row>div{min-width:0;flex:1}
+.av{cursor:default}
+.msgs{padding:24px max(24px,calc((100% - 960px)/2));gap:4px}
+.m{max-width:min(620px,72%);padding:9px 14px;border-radius:18px;font-size:14.5px;line-height:1.45}
+.m.me{border-bottom-right-radius:6px}
+.m:not(.me){border-bottom-left-radius:6px}
+.send{padding:14px max(24px,calc((100% - 960px)/2));border-top:1px solid var(--line);background:var(--card)}
+.send input{padding:12px 18px;font-size:14.5px;background:var(--bg)}
+.send input:focus{outline:0;border-color:var(--dim)}
+.btn{transition:opacity .12s}.btn:hover{opacity:.85}
+.note{background:var(--card)}
+.list::-webkit-scrollbar,.msgs::-webkit-scrollbar{width:8px}
+.list::-webkit-scrollbar-thumb,.msgs::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+@media (min-width:1500px){.side{width:420px}}
+/* ---- Farben wie in der App ---- */
+:root{--bg:#f6f2e9;--fg:#161512;--dim:#9c9686;--card:#fffdf8;--line:#e6dfcd;--me:#161512;--mefg:#f6f2e9;--them:#efe9da;--accent:#161512;--bad:#c0392b}
+@media (prefers-color-scheme:dark){:root{--bg:#111110;--fg:#f4f3f0;--dim:#8a897f;--card:#1c1b19;--line:#26251f;--me:#f4f3f0;--mefg:#111110;--them:#1c1b19;--accent:#f4f3f0;--bad:#e5705f}}
+.m.me{color:var(--mefg)}
+.m:not(.me){border:1px solid var(--line)}
+.btn{background:var(--card)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.card{border-radius:24px;padding:36px;max-width:440px}
+.row.on{background:var(--bg)}
+.send input{background:var(--card)}
