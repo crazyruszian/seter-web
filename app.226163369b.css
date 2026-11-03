@@ -72,6 +72,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .backb{display:none}
 .empty{margin:auto;color:var(--dim);text-align:center;padding:20px}.empty .big0{font-size:24px;font-weight:500;color:var(--tx)}
 .listcol .empty{margin:0}
+.m{position:relative}.dots3{position:absolute;top:2px;right:6px;opacity:0;color:inherit;font-size:16px;line-height:1;padding:2px 4px}.m:hover .dots3,.dots3:focus-visible{opacity:.7}
+.imgt img{max-width:100%;max-height:340px;border-radius:14px;display:block;cursor:zoom-in}.imgt .btn{margin-top:6px}
+.mi.bad{color:var(--bad)}.reqm{max-width:340px}.rq{padding:4px 12px 10px;color:var(--tx);font-size:13px}
 /* Overlays: Profilbild, Status, Kamera */
 .ov{position:fixed;inset:0;background:rgba(0,0,0,.78);display:flex;align-items:center;justify-content:center;padding:16px;z-index:10}
 .menu{background:var(--sf);border-radius:20px;padding:8px;min-width:240px;display:flex;flex-direction:column}
@@ -94,3 +97,5 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 @media (min-width:1500px){.app{grid-template-columns:72px 420px 1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.reqnote{align-self:center;text-align:center;background:var(--sf);border-radius:20px;padding:20px;margin:16px 0;max-width:360px}.reqnote p{color:var(--tx);margin-bottom:12px}
