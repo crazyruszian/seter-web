@@ -99,3 +99,5 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 .reqnote{align-self:center;text-align:center;background:var(--sf);border-radius:20px;padding:20px;margin:16px 0;max-width:360px}.reqnote p{color:var(--tx);margin-bottom:12px}
+
+.card .big0{font-size:22px;font-weight:500;color:var(--fg);margin-top:14px}
